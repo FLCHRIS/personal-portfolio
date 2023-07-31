@@ -1,0 +1,70 @@
+.nav {
+  transition-property: background-color clip-path;
+  transition-duration: .3s;
+  position: absolute;
+  top: 8.7rem;
+  left: 0;
+  background-color: $WhiteLight;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  .nav__list {
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+    gap: 3rem;
+    padding: 5rem 2rem;
+    .nav__item {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 600;
+      font-family: $OpenSans;
+      color: $Black;
+      width: max-content;
+      margin: 0 auto;
+      transition-property: color;
+      transition-duration: .3s;
+      &:hover {
+        color: $Red;
+      }
+    }
+  }
+}
+
+.nav__show {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.dark .nav {
+  background-color: $BlackLight;
+  .nav__list {
+    .nav__item {
+      color: $White;
+      &:hover {
+        color: $Red;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 38rem) {
+  .nav {
+    position: static;
+    width: auto;
+    clip-path: none;
+    .nav__list {
+      grid-auto-flow: column;
+      text-align: center;
+      gap: 2rem;
+      padding: 0;
+    }
+  }
+}
+@media screen and (min-width: 60rem) {
+  .nav {
+    .nav__list {
+      .nav__item {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
