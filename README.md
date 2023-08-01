@@ -1,6 +1,6 @@
 # [PERSONAL PORTFOLIO]() 👨‍💻
 
-![Preview](./preview.jpg)
+![Preview](./preview.png)
 
 Learn about my web development expertise. Explore a collection of interactive and responsive websites built using the latest technologies such as ReactJS, Vanilla JavaScript, CSS, SCSS, Tailwind and HTML. Demonstrate your skills and experience in designing and developing modern networking solutions.
 
