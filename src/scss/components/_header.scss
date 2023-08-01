@@ -6,7 +6,7 @@
     transition: background-color .3s;
     position: relative;
     padding: 2rem;
-    max-width: 140rem; // <---
+    max-width: 140rem;
     margin: 0 auto;
     background-color: $WhiteLight;
     display: grid;
@@ -33,6 +33,8 @@
   }
   .header__bottom {
     padding: 10rem 2rem;
+    max-width: 140rem;
+    margin: 0 auto;
     .header__title {
       width: 30rem;
       margin: 0 auto;
@@ -48,6 +50,7 @@
       }
     }
     .header__paragraph {
+      line-height: 1.5;
       transition: background-color .3s;
       font-family: $OpenSans;
       font-size: 1.6rem;
