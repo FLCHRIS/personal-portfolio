@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://christianfl.netlify.app/sitemap.xml
