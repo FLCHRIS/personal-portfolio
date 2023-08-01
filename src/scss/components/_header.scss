@@ -69,8 +69,12 @@
         font-size: 1.8rem;
         text-transform: uppercase;
         padding: 1.5rem 7rem;
+        &:hover + .cta__effect {
+          transform: translate(-1.5rem, -1.5rem);
+        }
       }
       .cta__effect {
+        transition: transform .3s;
         position: absolute;
         top: 1.5rem;
         left: 1.5rem;
