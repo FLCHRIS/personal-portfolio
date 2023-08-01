@@ -1,0 +1,152 @@
+.about {
+  padding: 9rem 2rem;
+  .about__title {
+    transition: color .3s;
+    font-family: $OpenSans;
+    font-weight: 700;
+    width: max-content;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $Black;
+    position: relative;
+    z-index: 10;
+    &::before {
+      content: '';
+      width: 80%;
+      height: 2rem;
+      position: absolute;
+      bottom: 0;
+      left: -1rem;
+      background-color: $Red;
+      z-index: -1;
+    }
+  }
+  .about__paragraph {
+    font-size: 1.6rem;
+    font-family: $OpenSans;
+    text-align: center;
+    transition: color .3s;
+    margin: 4rem 0 6rem;
+    color: $Black;
+    span {
+      font-weight: 600;
+      color: $Red;
+    }
+  }
+  .about__grid {
+    display: grid;
+    gap: 6rem;
+    .about__know {
+      .know__title {
+        transition: color .3s;
+        font-family: $OpenSans;
+        font-size: 2.5rem;
+        color: $Black;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 4rem;
+      }
+      .know__paragraph {
+        transition: color .3s;
+        font-size: 1.6rem;
+        font-family: $OpenSans;
+        color: $Black;
+        margin-bottom: 2rem;
+        span {
+          color: $Red;
+          font-weight: 600;
+        }
+      }
+    }
+    .about__skills {
+      .skills__title {
+        transition: color .3s;
+        font-family: $OpenSans;
+        font-size: 2.5rem;
+        color: $Black;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 4rem;
+      }
+      .skills__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+.dark .about {
+  .about__title {
+    color: $White;
+  }
+  .about__paragraph {
+    color: $White;
+  }
+  .about__grid {
+    display: grid;
+    gap: 6rem;
+    .about__know {
+      .know__title {
+        color: $White;
+      }
+      .know__paragraph {
+        color: $White;
+      }
+    }
+    .about__skills {
+      .skills__title {
+        color: $White;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 38rem) {
+  .about {
+    padding: 10rem 4rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .about {
+    padding: 10rem 6rem;
+    .about__title {
+      font-size: 4rem;
+    }
+    .about__paragraph {
+      width: 40rem;
+      font-size: 2rem;
+      margin: 6rem auto 11rem;
+    }
+    .about__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      .about__know {
+        .know__title {
+          font-size: 3rem;
+          margin-bottom: 5rem;
+        }
+        .know__paragraph {
+          transition: color .3s;
+          font-size: 1.8rem;
+          margin-bottom: 3rem;
+        }
+      }
+      .about__skills {
+        .skills__title {
+          font-size: 3rem;
+          margin-bottom: 5rem;
+        }
+        .skills__container {
+          gap: 3rem;
+        }
+      }
+    }
+  }
+}
