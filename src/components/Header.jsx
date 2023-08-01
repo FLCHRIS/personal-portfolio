@@ -3,6 +3,7 @@ import { Logo } from './Logo'
 import { BiSun, BiMoon } from 'react-icons/bi'
 import { Cross as Hamburger } from 'hamburger-react'
 import { Nav } from './Nav'
+import Atropos from 'atropos/react'
 
 export const Header = () => {
   const THEMES = {
@@ -10,7 +11,6 @@ export const Header = () => {
     dark: 'dark'
   }
   const [isOpen, setOpen] = useState(false)
-
   const [theme, setTheme] = useState(() => {
     const initialTheme = localStorage.getItem('theme') || THEMES.light
     document.documentElement.classList.add(initialTheme)
@@ -35,7 +35,11 @@ export const Header = () => {
     <header className='header'>
       <div className='header__top'>
         <a href='/' aria-label='Go to home'>
-          <Logo THEMES={THEMES} theme={theme} />
+          <Atropos
+            shadow={false}
+          >
+            <Logo THEMES={THEMES} theme={theme} />
+          </Atropos>
         </a>
         <Nav isOpen={isOpen} />
         <div className='header__action'>
