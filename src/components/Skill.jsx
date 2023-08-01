@@ -6,7 +6,7 @@ export const Skill = ({ icon, text }) => {
   return (
     <Atropos
       shadow={false}
-      activeOffset={40}
+      highlight={false}
     >
       <p className='skill'>
         {icon}
