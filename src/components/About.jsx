@@ -8,47 +8,47 @@ export const About = () => {
   const skills = [
     {
       text: 'figma',
-      icon: <BiLogoFigma />
+      icon: <BiLogoFigma aria-hidden='true' />
     },
     {
       text: 'react',
-      icon: <BiLogoReact />
+      icon: <BiLogoReact aria-hidden='true' />
     },
     {
       text: 'sass',
-      icon: <BiLogoSass />
+      icon: <BiLogoSass aria-hidden='true' />
     },
     {
       text: 'html',
-      icon: <BiLogoHtml5 />
+      icon: <BiLogoHtml5 aria-hidden='true' />
     },
     {
       text: 'git',
-      icon: <BiLogoGit />
+      icon: <BiLogoGit aria-hidden='true' />
     },
     {
       text: 'powershell',
-      icon: <SiPowershell />
+      icon: <SiPowershell aria-hidden='true' />
     },
     {
       text: 'node.js',
-      icon: <FaNodeJs />
+      icon: <FaNodeJs aria-hidden='true' />
     },
     {
       text: 'css3',
-      icon: <SiCss3 />
+      icon: <SiCss3 aria-hidden='true' />
     },
     {
       text: 'github',
-      icon: <BiLogoGithub />
+      icon: <BiLogoGithub aria-hidden='true' />
     },
     {
       text: 'tailwindcss',
-      icon: <BiLogoTailwindCss />
+      icon: <BiLogoTailwindCss aria-hidden='true' />
     },
     {
       text: 'javascript',
-      icon: <BiLogoJavascript />
+      icon: <BiLogoJavascript aria-hidden='true' />
     }
   ]
 
