@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
+import Atropos from 'atropos/react'
+import { Cross as Hamburger } from 'hamburger-react'
 import { Logo } from './Logo'
 import { BiSun, BiMoon } from 'react-icons/bi'
-import { Cross as Hamburger } from 'hamburger-react'
 import { Nav } from './Nav'
-import Atropos from 'atropos/react'
 
 export const Header = () => {
   const THEMES = {
@@ -42,7 +43,21 @@ export const Header = () => {
           </Atropos>
         </a>
         <Nav isOpen={isOpen} />
-        <div className='header__action'>
+        <motion.div
+          initial={{
+            translateY: -20,
+            opacity: 0
+          }}
+          whileInView={{
+            translateY: 0,
+            opacity: 1
+          }}
+          transition={{
+            delay: 0.5,
+            duration: 1
+          }}
+          className='header__action'
+        >
           <button aria-label='Change theme' className='header__theme' onClick={handleTheme}>
             {
               theme !== THEMES.light
@@ -57,12 +72,25 @@ export const Header = () => {
           <div className='header__menu'>
             <Hamburger toggled={isOpen} toggle={setOpen} color={theme === THEMES.light ? '#171717' : '#FFFFFF'} />
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className='header__bottom'>
-        <h1 className='header__title'>
+        <motion.h1
+          initial={{
+            translateY: -50,
+            opacity: 0
+          }}
+          whileInView={{
+            translateY: 0,
+            opacity: 1
+          }}
+          transition={{
+            duration: 1
+          }}
+          className='header__title'
+        >
           Hi there! I'm <span>Christian</span>
-        </h1>
+        </motion.h1>
         <p className='header__paragraph'>
           Web developer passionate about front-end development and design. Currently a third year student at UV. Aspiring for a career that allows me to channel my creativity, creating beautiful software and engaging experiences.
         </p>
