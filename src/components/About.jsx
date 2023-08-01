@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Skill } from './skill'
+import { Skill } from './Skill'
 import { SiPowershell, SiCss3 } from 'react-icons/si'
 import { BiLogoFigma, BiLogoReact, BiLogoSass, BiLogoJavascript, BiLogoTailwindCss, BiLogoGithub, BiLogoGit, BiLogoHtml5 } from 'react-icons/bi'
 import { FaNodeJs } from 'react-icons/fa'
