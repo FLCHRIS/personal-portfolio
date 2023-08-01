@@ -53,7 +53,7 @@ export const About = () => {
   ]
 
   return (
-    <section className='about'>
+    <section id='about' className='about'>
       <h2 className='about__title'>About me</h2>
       <p className='about__paragraph'>
         Hello everyone, I am Christian from <span>Veracruz</span>, <span>Mexico</span>. I am a student of the career of <span>Computer Technologies</span>.
