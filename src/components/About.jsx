@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { Skill } from './skill'
 import { SiPowershell, SiCss3 } from 'react-icons/si'
 import { BiLogoFigma, BiLogoReact, BiLogoSass, BiLogoJavascript, BiLogoTailwindCss, BiLogoGithub, BiLogoGit, BiLogoHtml5 } from 'react-icons/bi'
@@ -54,15 +55,43 @@ export const About = () => {
 
   return (
     <section id='about' className='about'>
-      <h2 className='about__title'>About me</h2>
+      <motion.h2
+        initial={{
+          translateY: 50,
+          opacity: 0
+        }}
+        whileInView={{
+          translateY: 0,
+          opacity: 1
+        }}
+        transition={{
+          duration: 1
+        }}
+        className='about__title'
+      >
+        About me
+      </motion.h2>
       <p className='about__paragraph'>
         Hello everyone, I am Christian from <span>Veracruz</span>, <span>Mexico</span>. I am a student of the career of <span>Computer Technologies</span>.
       </p>
       <div className='about__grid'>
         <div className='about__know'>
-          <h3 className='know__title'>
+          <motion.h3
+            initial={{
+              translateY: 50,
+              opacity: 0
+            }}
+            whileInView={{
+              translateY: 0,
+              opacity: 1
+            }}
+            transition={{
+              duration: 1
+            }}
+            className='know__title'
+          >
             Get to know me
-          </h3>
+          </motion.h3>
           <p className='know__paragraph'>
             In my spare time I like to research web technologies, such as <span>CSS</span>, <span>HTML5</span>, <span>JavaScript</span>, etc. Create static and accessible web pages with a simple and minimalist design, also learn new technologies.
           </p>
@@ -74,9 +103,23 @@ export const About = () => {
           </p>
         </div>
         <div className='about__skills'>
-          <h3 className='skills__title'>
+          <motion.h3
+            initial={{
+              translateY: 50,
+              opacity: 0
+            }}
+            whileInView={{
+              translateY: 0,
+              opacity: 1
+            }}
+            transition={{
+              delay: 0.5,
+              duration: 1
+            }}
+            className='skills__title'
+          >
             MY SKILLS
-          </h3>
+          </motion.h3>
           <div className='skills__container'>
             {
               skills.map((skill, index) => (
