@@ -1,0 +1,109 @@
+.do {
+  padding: 9rem 2rem;
+  max-width: 140rem;
+  margin: 0 auto;
+  .do__title {
+    transition: color .3s;
+    font-family: $OpenSans;
+    font-weight: 700;
+    width: max-content;
+    margin: 0 auto 6rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $Black;
+    position: relative;
+    z-index: 10;
+    &::before {
+      content: '';
+      width: 80%;
+      height: 2rem;
+      position: absolute;
+      bottom: 0;
+      left: -1rem;
+      background-color: $Red;
+      z-index: -1;
+    }
+  }
+  .do__grid {
+    display: grid;
+    gap: 6rem;
+    .do__container {
+      .do__subtitle {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        align-items: center;
+        gap: 1rem;
+        transition: color .3s;
+        font-family: $OpenSans;
+        font-size: 2.5rem;
+        color: $Black;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 4rem;
+      }
+      .do__paragraph {
+        line-height: 1.5;
+        transition: color .3s;
+        font-size: 1.6rem;
+        font-family: $OpenSans;
+        color: $Black;
+        span {
+          color: $Red;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.dark .do {
+  .do__title {
+    color: $White;
+  }
+  .do__grid {
+    .do__container {
+      .do__subtitle {
+        color: $White;
+      }
+      .do__paragraph {
+        color: $White;
+        span {
+          color: $Red;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 38rem)  {
+  .do {
+    padding: 9rem 4rem;
+  }
+}
+
+@media screen and (min-width: 60rem)  {
+  .do {
+    padding: 10rem 6rem;
+    .do__title {
+      margin: 0 auto 8rem;
+      font-size: 4rem;
+    }
+    .do__grid {
+      display: grid;
+      gap: 6rem;
+      grid-template-columns: 1fr 1fr;
+      .do__container {
+        .do__subtitle {
+          gap: 1.5rem;
+          font-size: 3rem;
+          margin-bottom: 5rem;
+        }
+        .do__paragraph {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  
+}
