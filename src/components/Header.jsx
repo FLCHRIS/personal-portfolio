@@ -43,21 +43,7 @@ export const Header = () => {
           </Atropos>
         </a>
         <Nav isOpen={isOpen} />
-        <motion.div
-          initial={{
-            translateY: -20,
-            opacity: 0
-          }}
-          whileInView={{
-            translateY: 0,
-            opacity: 1
-          }}
-          transition={{
-            delay: 0.5,
-            duration: 1
-          }}
-          className='header__action'
-        >
+        <div className='header__action'>
           <button aria-label='Change theme' className='header__theme' onClick={handleTheme}>
             {
               theme !== THEMES.light
@@ -72,7 +58,7 @@ export const Header = () => {
           <div className='header__menu'>
             <Hamburger toggled={isOpen} toggle={setOpen} color={theme === THEMES.light ? '#171717' : '#FFFFFF'} />
           </div>
-        </motion.div>
+        </div>
       </div>
       <div className='header__bottom'>
         <motion.h1
