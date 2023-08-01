@@ -1,0 +1,61 @@
+.footer {
+  transition: background-color .3s;
+  background-color: $WhiteLight;
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 140rem;
+  margin: 0 auto;
+  .footer__copy {
+    transition: color .3s;
+    font-family: $OpenSans;
+    font-size: 1.6rem;
+    color: $Black;
+    margin-bottom: 2rem;
+  }
+  .footer__build {
+    transition: color .3s;
+    font-family: $OpenSans;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    font-size: 1.6rem;
+    color: $Black;
+    text-transform: uppercase;
+    .footer__icon, a {
+      font-weight: 600;
+      color: $Red;
+      display: inline;
+    }
+  }
+}
+
+.dark .footer {
+  background-color: $BlackLight;
+  .footer__copy {
+    color: $White;
+  }
+  .footer__build {
+    color: $White;
+  }
+}
+
+@media screen and (min-width: 38rem) {
+  .footer {
+    padding: 4rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .footer {
+    padding: 6rem;
+    .footer__copy {
+      font-size: 1.8rem;
+    }
+    .footer__build {
+      gap: .6rem;
+      font-size: 1.8rem;
+    }
+  }
+}
