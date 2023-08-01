@@ -1,5 +1,7 @@
 .about {
   padding: 9rem 2rem;
+  max-width: 140rem;
+  margin: 0 auto;
   .about__title {
     transition: color .3s;
     font-family: $OpenSans;
@@ -23,6 +25,7 @@
     }
   }
   .about__paragraph {
+    line-height: 1.5;
     font-size: 1.6rem;
     font-family: $OpenSans;
     text-align: center;
@@ -48,6 +51,7 @@
         margin-bottom: 4rem;
       }
       .know__paragraph {
+        line-height: 1.5;
         transition: color .3s;
         font-size: 1.6rem;
         font-family: $OpenSans;
