@@ -1,0 +1,30 @@
+.skill {
+  transition: background-color color .3s;
+  width: max-content;
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  gap: 1rem;
+  font-size: 2rem;
+  font-family: $OpenSans;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: $Black;
+  padding: .7rem 1.2rem;
+  color: $White;
+  svg {
+    color: $Red;
+  }
+}
+.dark .skill {
+  background-color: $White;
+  color: $Black;
+}
+
+@media screen and (min-width: 60rem) {
+  .skill {
+    gap: 1.1rem;
+    font-size: 2.2rem;
+    padding: .8rem 1.3rem;
+  }
+}
