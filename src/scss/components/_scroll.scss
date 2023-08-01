@@ -1,0 +1,20 @@
+body {
+  &::-webkit-scrollbar {
+    width: 1.2rem;
+    background-color: $White;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: $Red;
+  }
+}
+
+.dark body {
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $Black;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: $Red;
+    border-radius: 2px;
+  }
+}
