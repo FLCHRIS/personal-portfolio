@@ -28,6 +28,23 @@
       color: $Red;
       display: inline;
     }
+    a {
+      position: relative;
+      &::before {
+        content: '';
+        width: 100%;
+        height: .2rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $Red;
+        clip-path: circle(0% at 50% 50%);
+        transition: clip-path .3s;
+      }
+      &:hover::before {
+        clip-path: circle(70.7% at 50% 50%);
+      }
+    }
   }
 }
 
