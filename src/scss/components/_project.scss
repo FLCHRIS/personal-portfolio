@@ -33,13 +33,17 @@
         position: relative;
         &::before {
           content: '';
-          transition: color .3s;
+          transition-property: width color;
+          transition-duration: .3s;
           width: 40%;
-          height: .1rem;
+          height: .2rem;
           position: absolute;
-          bottom: 0;
+          bottom: -.1rem;
           left: 0;
           background-color: $Black;
+        }
+        &:hover::before {
+          width: 100%;
         }
       }
     }
