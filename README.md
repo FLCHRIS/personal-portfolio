@@ -17,8 +17,6 @@ Learn about my web development expertise. Explore a collection of interactive an
 Some dependencies I used were the following:
 
 - **React Icons**
-- **HTML**
-- **SASS**
 - **Framer Motion**
 - **Atropos**
 - **Hamburger React**
@@ -34,3 +32,5 @@ Some of my platforms
 
 - [Frontend Mentor | Christian's profile](https://www.frontendmentor.io/profile/FLCHRIS)
 - [GitHub](https://github.com/FLCHRIS)
+
+**Happy Codding!** ✌️
