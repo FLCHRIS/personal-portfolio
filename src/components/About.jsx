@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Skill } from './Skill'
 import { SiPowershell, SiCss3 } from 'react-icons/si'
-import { BiLogoFigma, BiLogoReact, BiLogoSass, BiLogoJavascript, BiLogoTailwindCss, BiLogoGithub, BiLogoGit, BiLogoHtml5 } from 'react-icons/bi'
+import { BiLogoFigma, BiLogoReact, BiLogoSass, BiLogoJavascript, BiLogoTailwindCss, BiLogoGithub, BiLogoGit, BiLogoHtml5, BiLogoTypescript } from 'react-icons/bi'
 import { FaNodeJs } from 'react-icons/fa'
 
 export const About = () => {
@@ -14,6 +14,14 @@ export const About = () => {
     {
       text: 'react',
       icon: <BiLogoReact aria-hidden='true' />
+    },
+    {
+      text: 'javascript',
+      icon: <BiLogoJavascript aria-hidden='true' />
+    },
+    {
+      text: 'typescript',
+      icon: <BiLogoTypescript aria-hidden='true' />
     },
     {
       text: 'sass',
@@ -40,16 +48,12 @@ export const About = () => {
       icon: <SiCss3 aria-hidden='true' />
     },
     {
-      text: 'github',
-      icon: <BiLogoGithub aria-hidden='true' />
-    },
-    {
       text: 'tailwindcss',
       icon: <BiLogoTailwindCss aria-hidden='true' />
     },
     {
-      text: 'javascript',
-      icon: <BiLogoJavascript aria-hidden='true' />
+      text: 'github',
+      icon: <BiLogoGithub aria-hidden='true' />
     }
   ]
 
