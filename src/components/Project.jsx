@@ -17,7 +17,7 @@ export const Project = ({ image, title, view, code, build }) => {
         <h2 className='card__title'>Website: {title}</h2>
         <div className='card__container'>
           <a href={view} target='_blank' rel='noreferrer' className='card__ctas'>
-            View Project <IoIosArrowForward />
+            Preview Site <IoIosArrowForward />
           </a>
           <a href={code} target='_blank' rel='noreferrer' className='card__ctas'>
             View Code <IoIosArrowForward />
