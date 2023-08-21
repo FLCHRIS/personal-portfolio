@@ -4,8 +4,9 @@ import { motion } from 'framer-motion'
 import dfpreview from '../assets/dfpreview.png'
 import hlppreview from '../assets/hlppreview.png'
 import smdpreview from '../assets/smdpreview.png'
-import { BiLogoReact, BiLogoTailwindCss } from 'react-icons/bi'
-import { SiVite } from 'react-icons/si'
+import burgerpreview from '../assets/burgerpreview.png'
+import { BiLogoReact, BiLogoTailwindCss, BiLogoSass, BiLogoTypescript } from 'react-icons/bi'
+import { SiVite, SiYarn } from 'react-icons/si'
 
 export const Projects = () => {
   const projects = [
@@ -16,15 +17,15 @@ export const Projects = () => {
       code: 'https://github.com/FLCHRIS/d-food',
       build: [
         {
-          text: 'tailwindcss',
+          text: 'Tailwindcss',
           icon: <BiLogoTailwindCss aria-hidden='true' />
         },
         {
-          text: 'react',
+          text: 'React',
           icon: <BiLogoReact aria-hidden='true' />
         },
         {
-          text: 'vite',
+          text: 'Vite',
           icon: <SiVite aria-hidden='true' />
         }
       ]
@@ -36,15 +37,15 @@ export const Projects = () => {
       code: 'https://github.com/FLCHRIS/huddle-landing-page-with-curved-sections-master',
       build: [
         {
-          text: 'tailwindcss',
+          text: 'Tailwindcss',
           icon: <BiLogoTailwindCss aria-hidden='true' />
         },
         {
-          text: 'react',
+          text: 'React',
           icon: <BiLogoReact aria-hidden='true' />
         },
         {
-          text: 'vite',
+          text: 'Vite',
           icon: <SiVite aria-hidden='true' />
         }
       ]
@@ -56,16 +57,40 @@ export const Projects = () => {
       code: 'https://github.com/FLCHRIS/Social-media-dashboard-with-theme-switcher',
       build: [
         {
-          text: 'tailwindcss',
+          text: 'TailwindCSS',
           icon: <BiLogoTailwindCss aria-hidden='true' />
         },
         {
-          text: 'react',
+          text: 'React',
           icon: <BiLogoReact aria-hidden='true' />
         },
         {
-          text: 'vite',
+          text: 'Vite',
           icon: <SiVite aria-hidden='true' />
+        }
+      ]
+    },
+    {
+      image: burgerpreview,
+      title: 'Burger time',
+      view: 'https://breakfasttimeandburger.netlify.app/',
+      code: 'https://github.com/FLCHRIS/burger-time',
+      build: [
+        {
+          text: 'SCSS',
+          icon: <BiLogoSass aria-hidden='true' />
+        },
+        {
+          text: 'TypeScript',
+          icon: <BiLogoTypescript aria-hidden='true' />
+        },
+        {
+          text: 'Yarn',
+          icon: <SiYarn aria-hidden='true' />
+        },
+        {
+          text: 'React',
+          icon: <BiLogoReact aria-hidden='true' />
         }
       ]
     }
